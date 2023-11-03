@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 📑 Tecnologias Frontend del Proyecto
 
-## Getting Started
+- JavaScript / TypeScript
 
-First, run the development server:
+  - Si bien el proyecto esta inicializado con TypeScript, puedes seguir construyendo sin problema con archivos `.js` o `.jsx`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- npm ( linea de comandos, gestor de paquetes, instalación de depencias, librerias, etc )
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Git Flow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow) ( flujo de trabajo, nombramiento de ramas )
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Fetch / Axios ( solicitudes, peticiones, api´s )
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [NextJS](https://nextjs.org/docs) ( framework, componentes cliente y servidor, interfaz de usuario dinámica )
 
-## Learn More
+- React Context ( gestion de estados de la aplicación )
 
-To learn more about Next.js, take a look at the following resources:
+- Tailwind CSS ( estilos, animaciones, colores, [extension VSCode](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) )
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [react-hook-form](https://react-hook-form.com/) ( formularios, validaciones )
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Eslint y StandardJS ([standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript)) ( reglas para formatear codigo )
 
-## Deploy on Vercel
+  - Para activar el autoformateador de eslint al guardar un archivo en Visual Studio Code:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```json
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Leaflet](https://leafletjs.com/), [React Leaflet](https://react-leaflet.js.org/) ( alternativa a la api de google maps )
