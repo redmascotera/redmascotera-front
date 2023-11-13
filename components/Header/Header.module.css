@@ -1,0 +1,47 @@
+@media (max-width: 280px){
+    .header{
+        padding: 0 .5rem;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1060px){
+    .link{
+        font-size: 2rem;
+    }
+
+    .responsiveNavBar{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    .navBar{
+        display: none;
+    }
+
+    .responsiveNavBar{
+        background: rgba(0, 0, 0, .75);
+        position: absolute;
+        top: 4rem;
+        height: calc(100vh - 4rem);
+        width: 100%;
+    }
+}
+
+@media (min-width: 1061px) {
+    .hamburguerMenu{
+        display: none;
+    }
+
+    .responsiveNavBar{
+        display: none;
+    }
+}
