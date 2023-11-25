@@ -20,7 +20,7 @@ export default function NavLinks () {
     <LinkToVisit href={'#contact'}>Contacto</LinkToVisit>
     <LinkToVisit href={'#pet-lost'}>Perdí a mi Mascota</LinkToVisit>
     <LinkToVisit href={'#pet-adoption'}>Adopción</LinkToVisit>
-    <LinkToVisit href={'#'} className={'text-red-300 hover:text-red-400'}>Mi Perfil</LinkToVisit>
+    <LinkToVisit href={'/sign-up'} className={'text-red-300 hover:text-red-400'}>Mi Perfil</LinkToVisit>
     </>
   )
 }

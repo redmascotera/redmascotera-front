@@ -1,9 +1,7 @@
-import Header from '@/components/Header/Header'
-
 export default function Home () {
   return (
     <>
-      <Header />
+      <h2>Home de la Aplicación</h2>
     </>
   )
 }
