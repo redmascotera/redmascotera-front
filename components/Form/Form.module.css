@@ -84,3 +84,8 @@
         font-size: 1.25rem;
     }
 }
+
+.formSignIn{
+    justify-content: center;
+    gap: 4rem;
+}
