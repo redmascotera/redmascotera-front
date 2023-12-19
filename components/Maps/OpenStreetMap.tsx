@@ -7,6 +7,7 @@ import 'leaflet/dist/leaflet.css'
 // Fix pin marker icon error
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css'
 import 'leaflet-defaulticon-compatibility'
+import styles from '@/components/Maps/PetMaps.module.css'
 
 export default function OpenStreetMap () {
   return (
@@ -15,7 +16,7 @@ export default function OpenStreetMap () {
             center={[-34.6083, -58.3712]}
             zoom={14}
             scrollWheelZoom={false}
-            className='w-3/4 h-[500px] rounded-lg my-8'
+            className={`w-3/4 h-[500px] rounded-lg my-8 ${styles.mapContainer}`}
         >
             <TileLayer attribution={openStreetMapCopyright.attribution} url={openStreetMapCopyright.url}/>
             {/* Pets in adoption container */}

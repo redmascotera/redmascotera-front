@@ -24,7 +24,7 @@ export default function PetAdoption () {
                 height={300}
                 />
                 <article className='flex flex-col gap-2'>
-                    <p className='text-center'>{pet.description}</p>
+                    <p>Nombre: {pet.name}</p>
                     <p>Genero: {pet.gender}</p>
                     <p>Edad: {getPetFormatedAge(pet.age)}</p>
                     <p>Tamaño: {pet.size}</p>

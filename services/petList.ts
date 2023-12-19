@@ -32,7 +32,7 @@ export interface PetData {
   gender: string
   age: number
   size: string
-  personality: string | string[]
+  personality: string[]
   energy: string | string[]
   friendlyWith: string | string[]
   location: {

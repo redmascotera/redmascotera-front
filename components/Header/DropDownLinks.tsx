@@ -22,12 +22,12 @@ export default function DropDownLinks ({ children, listLinks, className }: DropD
           {children}
           <IoIosArrowDown />
         </li>
-        <div className={menuDisplayed ? 'flex flex-col items-center gap-2 absolute top-11 p-2 bg-slate-900 rounded-b-md rounded-tr-md w-52 text-yellow-50' : 'hidden'}>
+        <div className={menuDisplayed ? `flex flex-col items-center gap-2 absolute top-11 p-2 bg-slate-900 rounded-md w-52 text-yellow-50 -left-1/3 ${styles.linksContainer}` : 'hidden'}>
           {listLinks.map(link => (
             <Link
               key={link.href}
               href={link.href}
-              className='hover:bg-white hover:text-black py-1 px-2 rounded'
+              className={`hover:bg-white hover:text-black py-1 px-2 rounded ${styles.optionLink}`}
             >
                 {link.title}
             </Link>

@@ -17,6 +17,14 @@
         font-size: 2rem;
     }
 
+    .linksContainer{
+        width: 20rem;
+    }
+
+    .optionLink{
+        font-size: 1.4rem;
+    }
+
     .responsiveNavBar{
         gap: 2rem;
     }
