@@ -1,6 +1,9 @@
 import brownDog from '@/public/brown-dog-looking-curious.jpg'
 import whiteDog from '@/public/white-puppy.jpg'
 import grayCat from '@/public/cat-paying-attention.jpg'
+// Types for maps position
+import { type LatLngTuple } from 'leaflet'
+import { type StaticImageData } from 'next/image'
 
 /*
 MODELO
@@ -17,11 +20,30 @@ MODELO
     ],
     energy: ['tranquilo', 'equilibrado', 'enérgico'],
     friendlyWith: ['nadie', 'solo misma especie', 'todas las especies', 'solo otra especie']
+    location: [-34.61315, -58.37723]
 }
 */
 
-export const petList = [
+export interface PetData {
+  name?: string
+  photo: StaticImageData
+  alt: string
+  description: string
+  gender: string
+  age: number
+  size: string
+  personality: string | string[]
+  energy: string | string[]
+  friendlyWith: string | string[]
+  location: {
+    position: LatLngTuple
+    label: string
+  }
+}
+
+export const petList: PetData[] = [
   {
+    name: 'Colita',
     photo: brownDog,
     alt: 'brown-dog-looking-curious',
     description: 'DESCRIPCIÓN',
@@ -30,9 +52,14 @@ export const petList = [
     size: 'mediano',
     personality: ['curioso', 'independiente', 'sociable', 'cariñoso'],
     energy: 'equilibrado',
-    friendlyWith: 'todas las especies'
+    friendlyWith: 'todas las especies',
+    location: {
+      position: [-34.6083, -58.3712],
+      label: 'Default marker - Pet Adoption'
+    }
   },
   {
+    name: 'Pochoclo',
     photo: whiteDog,
     alt: 'white-puppy',
     description: 'DESCRIPCIÓN',
@@ -41,9 +68,14 @@ export const petList = [
     size: 'pequeño',
     personality: ['juguetón', 'aventurero', 'afectuoso', 'cariñoso'],
     energy: 'enérgico',
-    friendlyWith: 'todas las especies'
+    friendlyWith: 'todas las especies',
+    location: {
+      position: [-34.6037, -58.3816],
+      label: 'Default marker - Pet Adoption'
+    }
   },
   {
+    name: 'Maila',
     photo: grayCat,
     alt: 'cat-paying-attention',
     description: 'DESCRIPCIÓN',
@@ -52,6 +84,10 @@ export const petList = [
     size: 'mediano',
     personality: ['curioso', 'independiente', 'observador', 'dócil'],
     energy: 'tranquilo',
-    friendlyWith: 'todas las especies'
+    friendlyWith: 'todas las especies',
+    location: {
+      position: [-34.5976, -58.4309],
+      label: 'Default marker - Pet Adoption'
+    }
   }
 ]
