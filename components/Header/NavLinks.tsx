@@ -1,17 +1,18 @@
-import Link from 'next/link'
-import styles from '@/components/Header/Header.module.css'
-
-function LinkToVisit ({ children, href, className }) {
-  return (
-    <Link
-    className={`font-medium text-lg transition-all hover:bg-slate-100 p-2 rounded-lg hover:text-yellow-600 ${className} ` + styles.link}
-    href={href}>
-            {children}
-    </Link>
-  )
-}
+import DropDownLinks from './DropDownLinks'
+import LinkToVisit from './LinkToVisit'
 
 export default function NavLinks () {
+  const adoptionLinks = [
+    {
+      href: '/pet-adoption/profiles',
+      title: 'Perfiles animalitos'
+    },
+    {
+      href: '/pet-adoption/maps',
+      title: 'Mapa'
+    }
+  ]
+
   return (
     <>
     {/* Home sections */}
@@ -19,7 +20,7 @@ export default function NavLinks () {
     <LinkToVisit href={'#donation'}>Colaboración</LinkToVisit>
     <LinkToVisit href={'#contact'}>Contacto</LinkToVisit>
     <LinkToVisit href={'#pet-lost'}>Perdí a mi Mascota</LinkToVisit>
-    <LinkToVisit href={'#pet-adoption'}>Adopción</LinkToVisit>
+    <DropDownLinks listLinks={adoptionLinks}>Adopcion</DropDownLinks>
     <LinkToVisit href={'/sign-up'} className={'text-red-300 hover:text-red-400'}>Mi Perfil</LinkToVisit>
     </>
   )
