@@ -16,10 +16,7 @@ export default function NavLinks () {
   return (
     <>
     {/* Home sections */}
-    <LinkToVisit href={'#about'}>Nosotros</LinkToVisit>
-    <LinkToVisit href={'#donation'}>Colaboración</LinkToVisit>
-    <LinkToVisit href={'#contact'}>Contacto</LinkToVisit>
-    <LinkToVisit href={'#pet-lost'}>Perdí a mi Mascota</LinkToVisit>
+    <LinkToVisit href={'/'}>Perdí a mi Mascota</LinkToVisit>
     <DropDownLinks listLinks={adoptionLinks}>Adopcion</DropDownLinks>
     <LinkToVisit href={'/sign-up'} className={'text-red-300 hover:text-red-400'}>Mi Perfil</LinkToVisit>
     </>
