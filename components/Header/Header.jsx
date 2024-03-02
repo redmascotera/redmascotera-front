@@ -11,7 +11,7 @@ export default function Header () {
       <Link href="/">
         <Image
           src={logo}
-          alt='A puppy with a heart in his eyes'
+          alt='Red Mascotera official banner with a dog and cat'
           className={'w-44 ' + styles.logo}
         />
       </Link>

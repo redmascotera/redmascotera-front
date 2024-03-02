@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { petAdoptionList } from '@/services/petList'
+import { PetLostList } from '@/services/petList'
 
-export default function PetAdoption () {
+export default function PetLost () {
   const getPetFormatedPersonality = (personalityList: string[]) => {
     return personalityList.map((value, index) => (`${value}${index === personalityList.length - 1 ? '' : ', '}`))
   }
@@ -11,7 +11,7 @@ export default function PetAdoption () {
   return (
     <>
         <section className='grid grid-cols-[repeat(auto-fit,minmax(250px,400px))] justify-center gap-4 p-4'>
-            {petAdoptionList.map((pet, index) => (
+            {PetLostList.map((pet, index) => (
             <div
                 key={pet.alt + index}
                 className='bg-[rgba(0,0,0,.4)] p-4 rounded flex flex-col items-center justify-around gap-3'
