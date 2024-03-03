@@ -1,6 +1,6 @@
 'use client'
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { petList } from '@/services/petList'
+import type { PetData } from '@/services/petList'
 import { openStreetMapCopyright } from '@/services/streetMap'
 import PetMapPopUp from './PetMapPopUp'
 import 'leaflet/dist/leaflet.css'
@@ -9,7 +9,7 @@ import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import 'leaflet-defaulticon-compatibility'
 import styles from '@/components/Maps/PetMaps.module.css'
 
-export default function OpenStreetMap () {
+export default function OpenStreetMap ({ animalsList }: { animalsList: PetData[] }) {
   return (
     <div className='flex justify-center items-center'>
         <MapContainer
@@ -20,7 +20,7 @@ export default function OpenStreetMap () {
         >
             <TileLayer attribution={openStreetMapCopyright.attribution} url={openStreetMapCopyright.url}/>
             {/* Pets in adoption container */}
-            {petList.map(pet => (
+            {animalsList.map(pet => (
                 <PetMapPopUp key={pet.alt} petData={pet}/>
             ))}
         </MapContainer>
