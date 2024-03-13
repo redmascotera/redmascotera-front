@@ -1,23 +1,23 @@
 # 🔹 Red Mascotera - Frontend 🔹
 
-## 🔅 Contenido
+## Contenido
 
-- [Web Preview](#🔅-preview)
-- [Instalación del Proyecto](#🔅-instalación-del-proyecto)
-  - [Etapa de Desarrollo](#🔶-etapa-de-desarrollo-🔶)
-  - [Etapa de Stage](#🔶-etapa-de-stage-🔶)
-- [Herramientas y Tecnologias](#🔅-herramientas-y-tecnologias)
-- [Estructura con NextJS](#🔅-estructura-con-nextjs)
+- [Web Preview](#preview)
+- [Instalación del Proyecto](#instalación-del-proyecto)
+  - [Etapa de Desarrollo](#etapa-de-desarrollo)
+  - [Etapa de Stage](#etapa-de-stage)
+- [Herramientas y Tecnologias](#herramientas-y-tecnologias)
+- [Estructura con NextJS](#estructura-con-nextjs)
 
-## 🔅 Preview
+## Preview
 
 > Página web para la busqueda de animalitos perdidos y en adopción a través de perfiles y un mapa con su ubicación.
 
 ![Web Page Preview](public/webPagePreview.png)
 
-## 🔅 Instalación del Proyecto
+## Instalación del Proyecto
 
-### 🔶 Etapa de Desarrollo 🔶
+### Etapa de Desarrollo
 
 ##### Requerimientos:
 
@@ -32,7 +32,7 @@
 4. Ejecutar el entorno de desarrollo con `npm run dev`.
 5. Ahora puedes visitar tu `localhost:3000`.
 
-### 🔶 Etapa de Stage 🔶
+### Etapa de Stage
 
 ##### Requerimientos:
 
@@ -61,7 +61,7 @@ docker run --rm -p 3000:3000 rmfront
 
 - Para arrancar el proyecto en su `localhost:3000` y visualizar la página que iria a producción.
 
-## 🔅 Herramientas y Tecnologias
+## Herramientas y Tecnologias
 
 - `JavaScript` / `TypeScript`
 
@@ -87,7 +87,7 @@ docker run --rm -p 3000:3000 rmfront
 
 - [`Leaflet`](https://leafletjs.com/), [`React Leaflet`](https://react-leaflet.js.org/) ( alternativa a la api de google maps )
 
-## 🔅 Estructura con NextJS
+## Estructura con NextJS
 
 > Se describe la estructura de carpetas del `app router` de NextJS
 
