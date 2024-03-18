@@ -15,7 +15,7 @@ export default function OpenStreetMap ({ animalsList }: { animalsList: PetData[]
         <MapContainer
             center={[-34.6083, -58.3712]}
             zoom={14}
-            scrollWheelZoom={false}
+            scrollWheelZoom={true}
             className={`w-3/4 h-[500px] rounded-lg my-8 ${styles.mapContainer}`}
         >
             <TileLayer attribution={openStreetMapCopyright.attribution} url={openStreetMapCopyright.url}/>
