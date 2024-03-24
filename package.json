@@ -16,7 +16,7 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
-    "sharp": "^0.33.2"
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.8",
